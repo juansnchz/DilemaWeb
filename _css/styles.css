@@ -1,0 +1,517 @@
+/*CSS de los Textos */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700'); 
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  color: rgba(0,0,0,0.7);
+  padding: 0 10%;
+  
+}
+h3{
+  line-height: 1.8em;
+  font-size: 1em;
+    
+  
+}
+
+h2,h3,h4,h5,h6{
+  font-family: 'Josefin Sans', sans-serif;
+  
+  
+}
+/*h1 es el banner de Estudio Dilema */
+
+
+/*h2 son los títulos de cada una de las secciones: cómo entendemos los futuros, nuestros servicios, nuestro equipo, contacto */
+h2{
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  margin: 70px 0px;
+  color: black;
+  text-transform: uppercase;
+}
+
+/*h3 son todos los textos que siguen en jerarquía, cada uno de los títulos principales más importantes de cada sección e.g. futuro posible, futuro probable, investigación de tendencias, etnografía, juan s sánchez, santiago rodríguez,miembro 1, etc */
+h3{
+  font-size: 1.4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*h4 son los títulos de los cargos en Dilema: Director de estrategia bla bla */
+h4{
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: -10px;
+  font-weight: 700;
+  color: #727172;
+}
+
+/* h5 es el texto de "investigamos tendencias... */
+ h5{
+    font-size: 2em;
+    line-height: 1.3em;
+    text-align: center;
+    font-weight: 700;
+    
+   margin: 30px 0px;
+   margin-top: 45px;
+    
+}
+
+
+/*H6 son los captions que van en el carrusel y el texto de "En Dilema nos preocupamos..." */
+h6{
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.6em;
+  padding: 0 5%;
+  
+  
+}
+
+
+/*Darle color al fondo con el degradé y quitarle el color blanco que asigna Bootstrap */
+
+html {
+  height: 100%;
+  background-size: cover;
+  background: linear-gradient(rgba(102,252,146, 0.8), rgba(238,255,141, 0.8));
+     
+  background-attachment:fixed;
+  overflow:scroll;
+}
+
+body{
+    background-color: transparent;
+    position: relative;
+}
+
+/* _______________________________ Navegación ___________*/
+
+header .navbar{
+  padding: 5px 0px;
+}
+
+header .navbar-default{
+  /*background-color: rgba(102,252,146, 1);*/
+  background-color: rgba(143,253,167, 1);
+  border: none;
+}
+
+header .navbar-default .navbar-nav a{
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+  padding-top: 20px;
+  
+}
+
+header .navbar-default .navbar-nav a:hover{
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: darkgray;
+  
+}
+
+header .navbar-default .navbar-nav a:visited{
+  
+  color: black;
+  
+}
+
+header .navbar-default .navbar-nav .active a{
+  background: none;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1px;
+  text-shadow: none;
+  
+}
+
+header .navbar-default .navbar-nav .active a:hover{
+  background: none;
+  
+  
+}
+
+
+
+.navbar-default .navbar-nav>li>a:focus{
+  color: black;
+  background: transparent;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav>.active>a:focus{
+  background: transparent;
+  text-decoration: none;
+}
+
+/*Navbar brand ------------------------------------------------------------------------ */
+
+header .navbar-brand{
+  
+  width: 300px;
+  height: 60px;
+  background: url(../_assets/_logos/dilemalargo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  header .navbar-brand{
+  
+  width: 150px;
+  height: 60px;
+  background: url(../_assets/_logos/dilemalargo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+  
+  }
+  
+}
+
+@media only screen and (max-width: 768px){
+  header .navbar-brand{
+  
+  width: 190px;
+  height: 40px;
+  background: url(../_assets/_logos/dilemalargo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 3%;  
+  
+  }
+  
+}
+
+@media only screen and (min-width: 1312px){
+  header .navbar-brand{
+    left: -25%;
+  }
+}
+
+/* Navbar toggle ------------------------------------------------------------------------*/
+
+.navbar-default .navbar-toggle {
+    background-color: transparent;
+    color: black ;
+    border-color: black;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-top: none;
+}
+
+
+/* Carrusel */
+
+#home .item{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+  
+
+
+.carousel-caption h6{
+  
+  font-size: 1.9em;
+  line-height: 1.4em;
+  
+  background-color: rgba(0,0,0,0.3);
+  
+ 
+  
+}
+
+@media only screen and (max-width: 600px){
+  
+  .carousel-caption{
+  width: 80%;
+  position: relative;
+  top: 35%;
+  left: 10%;
+  }
+  
+  .carousel-caption h6{
+  
+  font-size: 1.9em;
+  line-height: 1.4em;
+  
+  }
+
+}
+
+/**  Carrusel Fade ---------------------------------------------------------------------**/
+
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .item {
+  transition: opacity ease-out .7s;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 1;
+  position: relative;
+}
+
+.carousel.fade .item.active {
+  opacity: 1;
+}
+
+.carousel-control {
+  opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+
+#home .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+/**  Sección de Futuros | Qué Hacemos ---------------------------------------------------------------------**/
+
+
+
+#diferentesfuturos{
+  padding: 10%;
+  height: 300px;
+  background-image: url(../_assets/_gif/Futuros.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-bottom: 23px;
+  
+}
+
+div.textofuturo p{
+  font-size: 1em;
+}
+
+.main .futuros h6{
+  margin-top: 20px;
+  
+}
+
+/**  Sección Servicios ---------------------------------------------------------------------**/
+
+
+
+
+#servicios article {
+    height: 31em;
+    padding-bottom: 15px;
+
+}
+
+
+
+div.productos{
+  height: 10em;
+  
+}
+
+#producto1{
+  background-image: url(../_assets/_gif/faseI.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+#producto2{
+  background-image: url(../_assets/_gif/faseII.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+#producto3{
+  background-image: url(../_assets/_gif/faseIII.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+#producto4{
+  background-image: url(../_assets/_gif/faseIV.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+#producto5{
+  background-image: url(../_assets/_gif/faseV.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  
+  
+}
+
+#producto6{
+  background-image: url(../_assets/_gif/faseVI.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  
+}
+
+#servicios h3{
+  padding: 0;
+  margin: inherit 0;
+}
+#servicios p{
+  padding: 10px;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 768px){
+  #servicios p{
+  padding: 0 10%;
+}
+}
+
+
+/**  Sección Equipo ---------------------------------------------------------------------**/
+
+
+.well{
+  background: transparent;
+  margin-bottom: 25px;
+  border: none;
+  box-shadow: none;
+  display: block;
+  
+    
+}
+
+.well p{
+  padding: 0;
+  font-size: 1.1em;
+  
+}
+
+article.trigger{
+  cursor: pointer;
+  margin-bottom: 10px;
+  
+}
+@media only screen and (max-width: 768px){
+#equipo img{
+  width: 60%;
+  position: relative;
+  margin: auto;
+  
+  }
+  
+  .well{
+    padding: 0 10%;
+  }  
+}
+/**  Sección Equipo ---------------------------------------------------------------------**/
+#contacto h2{
+  
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+#contacto h3{
+  font-size: 1.3em;
+  text-transform: none;
+  margin-bottom: 40px;
+  padding: 0 10%;
+  
+  
+}
+
+
+
+#contacto aside{
+  text-align: center;
+  margin-bottom: 40px;
+}
+#contacto aside p, #contacto aside h6{
+  margin: 0px;
+}
+#contacto aside a{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3em;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+#contacto aside a:hover{
+  text-decoration: none;
+  
+}
+
+.redessociales{
+  
+  
+  margin: 0 auto;
+  width: 200px;
+  margin-bottom: 30px;
+  
+}
+
+.redessociales li{
+  display: inline;
+  text-align: center;
+  position: relative;
+  left: -10%;
+
+}
+
+/**  Footer ---------------------------------------------------------------------**/
+
+
+footer p{
+  font-size: .8em;
+  text-align: center;
+}
